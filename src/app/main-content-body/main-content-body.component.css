@@ -170,6 +170,45 @@
   background-size: cover;
   background-attachment: fixed;
 }
+#four-market {
+  width: 100%;
+  height: 670px;
+  background-color: #000;
+  padding: 83px 0;
+}
+#four-market-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://www.livenationentertainment.com/content/img/home/bg-4-1715.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+#four-market-background > div {
+  height: 100%;
+}
+#four-market-background > div:first-child, #four-market-background > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#four-market-middle-bar {
+  background-color: #000;
+  width: 60px;
+}
+.concert-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four-market-horizontal-bar {
+  height: 60px;
+  width: 100%;
+  background-color: #000;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 480px) {
   #we-are-live {
@@ -186,6 +225,9 @@
   #every-18-mintues {
     height: 322px;
   }
+  #four-market {
+    height: 400px;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #we-are-live {
@@ -201,6 +243,9 @@
   }
   #every-18-mintues {
     height: 432px;
+  }
+  #four-market {
+    height: 460px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -232,6 +277,20 @@
   #every-18-mintues {
     height: 702px;
   }
+  #four-market {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 979px) {
+  #four-market-background {
+    flex-direction: column;
+  }
+  #four-market-middle-bar, .four-market-horizontal-bar {
+    display: none;
+  }
+  .concert-links {
+    border-bottom: 10px solid #000;
+  }
 }
 @media only screen and (min-width: 978px) and (max-width: 1024px) {
   #we-are-live {
@@ -256,10 +315,21 @@
     flex-direction: column;
     align-items: center;
   }
+  #four-market-middle-bar {
+    width: 20px;
+  }
+  .four-market-horizontal-bar {
+    height: 20px;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   #global-map {
     height: 350px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #four-market {
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -273,6 +343,9 @@
   }
   #every-18-mintues {
     height: 900px;
+  }
+  #four-market {
+    height: 468px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 2000px) {
