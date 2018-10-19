@@ -156,6 +156,20 @@
   position: absolute;
   top: 0;
 }
+#global-map {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #FFF;
+  background-image: url("http://www.livenationentertainment.com/content/img/concerts/globe-1715.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 480px) {
   #we-are-live {
@@ -203,6 +217,10 @@
     width: 110px;
     height: 110px;
   }
+  #global-map {
+    height: 250px;
+    font-size: 32px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #we-are-live {
@@ -237,6 +255,11 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  #global-map {
+    height: 350px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
