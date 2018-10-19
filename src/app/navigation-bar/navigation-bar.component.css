@@ -4,13 +4,43 @@
   width: 100%;
   z-index: 10000;
   opacity: 1;
+  background: url("http://www.livenationentertainment.com/content/img/global/fixed-nav-bg-small.png") top repeat-x;
+  min-height: 40px;
+}
+#nav-bar-inner {
+  background: url("http://www.livenationentertainment.com/content/img/global/1px-transparent-black.png");
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(http://www.livenationentertainment.com/content/img/global/fixed-nav-bg-small.png) top repeat-x;
 }
-#nav-bar-container img {
+#nav-bar-inner > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-bar-inner > div img {
+  margin-top: 10px;
   margin-left: 20px;
+}
+#hamburger-icon {
+  margin: 5px 20px 1px 1px;
+  padding: 7px 10px;
+  border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+  border-radius: 4px;
+  background-color: #0E0E0E;
+  background-image: linear-gradient(to bottom,#151515,#040404);
+  display: none;
+}
+.hamburger-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #F5F5F5;
+  border-radius: 1px;
+}
+.hamburger-bar:nth-child(2) {
+  margin: 3px 0;
 }
 #nav-bar {
   padding-bottom: 20px;
@@ -28,4 +58,36 @@
 }
 .drop-down-links {
   display: none;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 979px) {
+  #nav-bar-inner {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #nav-bar-inner > div {
+    width: 100%;
+  }
+  #nav-bar > li {
+    display: block;
+    border-top: 1px solid #222;
+    padding: 10px 7px 10px;
+  }
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
+  #nav-bar-container {
+    background-color: #000;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #nav-bar > li {
+    margin: 0 7px;
+  }
 }
