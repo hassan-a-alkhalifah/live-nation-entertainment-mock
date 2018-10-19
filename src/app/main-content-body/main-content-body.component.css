@@ -82,6 +82,80 @@
   font-size: 25px;
   margin: 0;
 }
+#every-18-minutes {
+  width: 100%;
+  height: 1214px;
+  overflow: hidden;
+  position: relative;
+}
+#every-18-minutes div{
+  background-repeat: no-repeat;
+}
+#every-18-minutes-background-layer-1 {
+  background-image: url("http://www.livenationentertainment.com/content/img/home/bg-coldplay-0-1715.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  width: 110%;
+  height: 100%;
+  position: absolute;
+}
+#every-18-minutes-background-layer-2 {
+  background-image: url("http://www.livenationentertainment.com/content/img/home/bg-coldplay-1-1715.png");
+  background-position: bottom center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#every-18-minutes-background-layer-3 {
+  background-image: url("http://www.livenationentertainment.com/content/img/home/confetti-0-full.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#every-18-minutes-background-layer-4 {
+  background-image: url("http://www.livenationentertainment.com/content/img/home/confetti-0-full.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#every-18-minutes-background-layer-5 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #FFF;
+  font-size: 47px;
+  text-align: center;
+}
+#every-18-minutes-background-layer-5 span:nth-child(2){
+  font-size: 66px;
+  font-weight: bold;
+}
+#every-18-minutes-background-layer-5 span:nth-child(4){
+  font-size: 54px;
+}
+#every-18-minutes-background-layer-6 {
+  background-image: url("http://www.livenationentertainment.com/content/img/home/confetti-2-full.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 480px) {
   #we-are-live {
@@ -95,6 +169,9 @@
   #we-are-banner {
     font-size: 20px;
   }
+  #every-18-mintues {
+    height: 322px;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #we-are-live {
@@ -107,6 +184,9 @@
   }
   #we-are-banner {
     font-size: 30px;
+  }
+  #every-18-mintues {
+    height: 432px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -131,10 +211,18 @@
   #we-are-banner {
     font-size: 50px;
   }
+  #every-18-mintues {
+    height: 702px;
+  }
 }
 @media only screen and (min-width: 978px) and (max-width: 1024px) {
   #we-are-live {
     height: 576px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #every-18-mintues {
+    height: 714px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -159,6 +247,9 @@
     width: 800px;
     height: 140px;
     font-size: 100px;
+  }
+  #every-18-mintues {
+    height: 900px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 2000px) {
