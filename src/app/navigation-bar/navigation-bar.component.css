@@ -8,7 +8,6 @@
   min-height: 40px;
 }
 #nav-bar-inner {
-  background: url("http://www.livenationentertainment.com/content/img/global/1px-transparent-black.png");
   width: 100%;
   display: flex;
   justify-content: center;
@@ -60,6 +59,19 @@
   display: none;
 }
 /* MEDIA QUERIES */
+@media only screen and (max-width: 480px) {
+  #nav-bar-container {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #nav-bar-container {
+    background-color: #000;
+  }
+  #main-logo {
+    width: 160px;
+  }
+}
 @media only screen and (max-width: 979px) {
   #nav-bar-inner {
     flex-direction: column;
@@ -67,6 +79,9 @@
   }
   #hamburger-icon {
     display: block;
+  }
+  #nav-bar-inner {
+    background: url("http://www.livenationentertainment.com/content/img/global/1px-transparent-black.png");
   }
   #nav-bar {
     display: none;
@@ -78,12 +93,6 @@
     display: block;
     border-top: 1px solid #222;
     padding: 10px 7px 10px;
-  }
-}
-/* MEDIA QUERIES */
-@media only screen and (max-width: 767px) {
-  #nav-bar-container {
-    background-color: #000;
   }
 }
 @media only screen and (max-width: 1200px) {
