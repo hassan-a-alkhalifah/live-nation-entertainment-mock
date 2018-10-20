@@ -218,6 +218,7 @@
     width: 372px;
     height: 56px;
     font-size: 40px;
+    margin-top: 90px;
   }
   #we-are-banner {
     font-size: 20px;
@@ -279,6 +280,11 @@
   }
   #four-market {
     height: 600px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 979px) {
+  #we-are-live-banner {
+    margin-top: 120px;
   }
 }
 @media only screen and (max-width: 979px) {
