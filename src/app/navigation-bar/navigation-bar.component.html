@@ -2,13 +2,14 @@
   <div id="nav-bar-inner">
     <div>
       <img id="main-logo" src="http://www.livenationentertainment.com/content/img/global/logo-live-nation.png" alt="Live Nation Entertainment logo">
-      <div id="hamburger-icon">
+      <div id="hamburger-icon" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="nav-bar">
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
       </div>
     </div>
-    <ul id="nav-bar">
+    <ul id="nav-bar"  [ngbCollapse]="!isCollapsed">
       <li id="drop-down-btn-1" ngbDropdownToggle ngbDropdown>
         DIVISIONS
         <ul ngbDropdownMenu aria-labelledby="drop-down-btn-1">
