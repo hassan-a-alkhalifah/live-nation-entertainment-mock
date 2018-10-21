@@ -82,6 +82,9 @@
   }
 }
 @media only screen and (max-width: 979px) {
+  #nav-bar-inner > div img {
+    margin-left: 20px;
+  }
   #nav-bar-inner {
     flex-direction: column;
     justify-content: space-between;
@@ -91,9 +94,6 @@
   }
   #nav-bar-inner {
     background: url("http://www.livenationentertainment.com/content/img/global/1px-transparent-black.png");
-  }
-  #nav-bar {
-    display: none;
   }
   #nav-bar-inner > div {
     width: 100%;
@@ -110,5 +110,10 @@
   }
   #nav-bar li {
     font-size: 12px;
+  }
+}
+@media only screen and (min-width: 978px) {
+  #nav-bar {
+    display: block;
   }
 }
