@@ -20,7 +20,6 @@
 }
 #nav-bar-inner > div img {
   margin-top: 10px;
-  margin-left: 20px;
 }
 #hamburger-icon {
   margin: 5px 20px 1px 1px;
@@ -57,6 +56,14 @@
 }
 .drop-down-links {
   display: none;
+}
+.dropdown-menu {
+  left: 0!important;
+  background-color: #222!important;
+    padding-left: 16px;
+}
+.dropdown-menu li:hover {
+  background-color: #af1e2d;
 }
 /* MEDIA QUERIES */
 @media only screen and (max-width: 480px) {
@@ -98,5 +105,8 @@
 @media only screen and (max-width: 1200px) {
   #nav-bar > li {
     margin: 0 7px;
+  }
+  #nav-bar li {
+    font-size: 12px;
   }
 }
