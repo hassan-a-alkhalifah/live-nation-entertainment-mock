@@ -60,7 +60,9 @@
 .dropdown-menu {
   left: 0!important;
   background-color: #222!important;
-    padding-left: 16px;
+}
+.dropdown-menu li {
+  padding-left: 16px;
 }
 .dropdown-menu li:hover {
   background-color: #af1e2d;
