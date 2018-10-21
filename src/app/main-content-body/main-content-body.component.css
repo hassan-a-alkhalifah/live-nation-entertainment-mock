@@ -204,6 +204,9 @@
   justify-content: center;
   align-items: center;
 }
+.concert-links:hover {
+  background: url("http://www.livenationentertainment.com/content/img/global/1px-transparent-red.png");
+}
 .four-market-horizontal-bar {
   height: 60px;
   width: 100%;
