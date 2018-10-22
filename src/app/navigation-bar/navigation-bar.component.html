@@ -11,7 +11,10 @@
     </div>
     <ul id="nav-bar"  [ngbCollapse]="!isCollapsed">
       <li id="drop-down-btn-1" ngbDropdownToggle ngbDropdown>
-        DIVISIONS
+        <div>
+          <p>DIVISIONS</p>
+          <b class="caret"></b>
+        </div>
         <ul ngbDropdownMenu aria-labelledby="drop-down-btn-1">
           <li>CONCERTS</li>
           <li>TICKETING</li>
@@ -23,7 +26,10 @@
       <li>NEWS CENTER</li>
       <li>CAREERS</li>
       <li id="drop-down-btn-2" ngbDropdownToggle ngbDropdown>
-        CONTACT
+        <div>
+          <p>CONTACT</p>
+          <b class="caret"></b>
+        </div>
         <ul ngbDropdownMenu aria-labelledby="drop-down-btn-2">
           <li>INVESTOR RELATIONS</li>
           <li>MEDIA RELATIONS</li>
