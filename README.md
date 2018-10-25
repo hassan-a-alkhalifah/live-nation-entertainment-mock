@@ -58,8 +58,9 @@ If you have any questions/concerns, I can be reached at **hassan.a.alkhalifah@gm
 
 ## Technologies Used
 
-* HTML5
 * JavaScript
+* Angular
+* HTML5
 * CSS3
 
 ## License
