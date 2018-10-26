@@ -12,21 +12,12 @@
     FOR LIVE ENTERTAINMENT
   </div>
   <div id="stats-banner">
-    <div>
+    <div *ngFor="let statBanner of statBanners | async">
       <div>
-        <img src={{this.userProfileIcon}} alt="user profile icon">
+        <img src={{statBanner.imageURL}} alt={{statBanner.imageAltText}}>
         <div>
-          <p>550</p>
-          <p>MILLON FANS</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src={{this.globeIcon}} alt="globe icon">
-        <div>
-          <p>40</p>
-          <p>COUNTIRIES</p>
+          <p>{{statBanner.quantityStat}}</p>
+          <p>{{statBanner.statDescription}}</p>
         </div>
       </div>
     </div>
