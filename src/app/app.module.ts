@@ -10,6 +10,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { masterFirebaseConfig } from './api-key';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ConcertsComponent } from './concerts/concerts.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     NavigationBarComponent,
     MainContentBodyComponent,
     FooterComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ConcertsComponent
   ],
   imports: [
     NgbModule.forRoot(),
