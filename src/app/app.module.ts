@@ -6,6 +6,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { MainContentBodyComponent } from './main-content-body/main-content-body.component';
 import { FooterComponent } from './footer/footer.component';
 import { routing } from './app.routing';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { routing } from './app.routing';
     AppComponent,
     NavigationBarComponent,
     MainContentBodyComponent,
-    FooterComponent
+    FooterComponent,
+    LandingPageComponent
   ],
   imports: [
     NgbModule.forRoot(),
