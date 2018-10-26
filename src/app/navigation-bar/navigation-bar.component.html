@@ -1,7 +1,7 @@
 <div id="nav-bar-container">
   <div id="nav-bar-inner">
     <div>
-      <img id="main-logo" src={{this.mainLogo}} alt="Live Nation Entertainment logo"/>
+      <img  routerLink="/" id="main-logo" src={{this.mainLogo}} alt="Live Nation Entertainment logo"/>
       <div id="hamburger-icon" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="nav-bar">
         <span class="hamburger-bar"></span>
@@ -16,7 +16,7 @@
           <b class="caret"></b>
         </div>
         <ul ngbDropdownMenu aria-labelledby="drop-down-btn-1">
-          <li>CONCERTS</li>
+          <li routerLink="/concerts">CONCERTS</li>
           <li>TICKETING</li>
           <li>SPONSORSHIP & ADVERTISING</li>
         </ul>
