@@ -7,7 +7,16 @@ import { MainContentBodyComponent } from './main-content-body/main-content-body.
 import { FooterComponent } from './footer/footer.component';
 import { routing } from './app.routing';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { masterFirebaseConfig } from './api-key';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -20,7 +29,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
